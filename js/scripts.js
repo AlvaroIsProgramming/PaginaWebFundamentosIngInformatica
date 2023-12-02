@@ -32,7 +32,7 @@ function Login() {
       return false; // Prevent form submission
     }else{
         sessionStorage.setItem("Usuario", document.getElementById("inputUsuario").value);
-        window.location.href = "index.html";
+        window.location.href = "../index.html";
     }
   }
 function alertaca() {

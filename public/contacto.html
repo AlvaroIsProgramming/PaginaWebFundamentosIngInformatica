@@ -8,13 +8,13 @@
         <meta name="author" content="Alvorak" />
         <title>Alvorak's Web</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="../css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
     <body class="sb-nav-fixed">
               <!-- Navbar de arriba y abajo -->
               <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-                <a class="navbar-brand ps-3" href="index.html">Alvorak</a>
+                <a class="navbar-brand ps-3" href="../../index.html">Alvorak</a>
                 <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
                 <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
                     <div class="input-group">
@@ -37,23 +37,23 @@
                         <div class="sb-sidenav-menu">
                             <div class="nav">
                                 <div class="sb-sidenav-menu-heading">Menu</div>
-                                <a class="nav-link" href="index.html">
+                                <a class="nav-link" href="../index.html">
                                     <div class="sb-nav-link-icon"><i class="fa-solid fa-house"></i></div>
                                     Inicio
                                 </a>
-                                <a class="nav-link" href="index.html">
+                                <a class="nav-link" href="../index.html">
                                     <div class="sb-nav-link-icon"><i class="fa-solid fa-gear"></i></div>
                                     Fundamentos
                                 </a>
-                                <a class="nav-link" href="contacto.html">
+                                <a class="nav-link" href="../public/contacto.html">
                                     <div class="sb-nav-link-icon"><i class="fa-solid fa-address-book"></i></div>
                                     Contáctame
                                 </a>
-                                <a class="nav-link" href="red.html">
+                                <a class="nav-link" href="../public/red.html">
                                     <div class="sb-nav-link-icon"><i class="fa-solid fa-users"></i></div>
                                     Socios
                                 </a>
-                                <a class="nav-link" href="index.html">
+                                <a class="nav-link" href="../index.html">
                                     <div class="sb-nav-link-icon"><i class="fa-solid fa-book"></i></div>
                                     Tema Abierto
                                 </a>
@@ -64,8 +64,8 @@
                                 </a>
                                 <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                     <nav class="sb-sidenav-menu-nested nav">
-                                        <a class="nav-link" href="redes_sociales.html">Redes</a>
-                                        <a class="nav-link" href="curriculum.html">¿Quien soy?</a>
+                                        <a class="nav-link" href="../public/redes_sociales.html">Redes</a>
+                                        <a class="nav-link" href="../public/curriculum.html">¿Quien soy?</a>
                                     </nav>
                                 </div>
                         </div>
@@ -82,7 +82,7 @@
                         <br>
                         <div class="container mt-5">
                             <h2>Contacto</h2>
-                            <form action="index.html" method="post">
+                            <form action="../index.html" method="post">
                               <div class="mb-3">
                                 <label for="nombre" class="form-label">Nombre:</label>
                                 <input type="text" class="form-control" id="nombre" name="nombre" required>
@@ -115,12 +115,12 @@
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
+        <script src="../js/scripts.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-        <script src="assets/demo/chart-area-demo.js"></script>
-        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="../assets/demo/chart-area-demo.js"></script>
+        <script src="../assets/demo/chart-bar-demo.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
-        <script src="js/datatables-simple-demo.js"></script>
+        <script src="../js/datatables-simple-demo.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script> 
@@ -135,14 +135,14 @@
                 var mensajeBienvenida=  document.getElementById("welcomeMensaje");
                 mensajeBienvenida.textContent = "Bienvenido " + sessionStorage.getItem("Usuario"); 
                 botonLogin.textContent = "Cerrar Sesión";
-                botonLogin.href = "login.html";
+                botonLogin.href = "../public/login.html";
                 botonLogin.onclick  = CerrarSesion;
-                iconoPersona.src ="assets/img/Open.ico";
+                iconoPersona.src ="../assets/img/Open.ico";
             }
             else{
                 botonLogin.textContent = "Iniciar Sesión";
-                botonLogin.href = "login.html";
-                iconoPersona.src ="assets/img/Close.ico"; 
+                botonLogin.href = "../public/login.html";
+                iconoPersona.src ="../assets/img/Close.ico"; 
             }
         }
         function CerrarSesion(){

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Pagina Web para Fundamentos" />
+        <meta name="author" content="Alvorak" />
+        <title>Alvorak's Web</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <link href="../css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+                    <!-- Navbar de arriba y abajo -->
+                    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+                        <a class="navbar-brand ps-3" href="../index.html">Alvorak</a>
+                        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+                        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                            <div class="input-group">
+                                <input class="form-control" type="text" placeholder="Buscar..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                                <button class="btn btn-primary" id="btnNavbarSearch" onclick="alertaca()" type="button"><i class="fas fa-search"></i></button>
+                            </div>
+                        </form>
+                        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img id="iconoPersona" src="assets/img/Close.ico"></img></a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="" id="botonLogin"></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div id="layoutSidenav">
+                        <div id="layoutSidenav_nav">
+                            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                                <div class="sb-sidenav-menu">
+                                    <div class="nav">
+                                        <div class="sb-sidenav-menu-heading">Menu</div>
+                                        <a class="nav-link" href="../index.html">
+                                            <div class="sb-nav-link-icon"><i class="fa-solid fa-house"></i></div>
+                                            Inicio
+                                        </a>
+                                        <a class="nav-link" href="../index.html">
+                                            <div class="sb-nav-link-icon"><i class="fa-solid fa-gear"></i></div>
+                                            Fundamentos
+                                        </a>
+                                        <a class="nav-link" href="../public/contacto.html">
+                                            <div class="sb-nav-link-icon"><i class="fa-solid fa-address-book"></i></div>
+                                            Contáctame
+                                        </a>
+                                        <a class="nav-link" href="../public/red.html">
+                                            <div class="sb-nav-link-icon"><i class="fa-solid fa-users"></i></div>
+                                            Socios
+                                        </a>
+                                        <a class="nav-link" href="../index.html">
+                                            <div class="sb-nav-link-icon"><i class="fa-solid fa-book"></i></div>
+                                            Tema Abierto
+                                        </a>
+                                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                            <div class="sb-nav-link-icon"><i class="fa-solid fa-medal"></i></div>
+                                            Sobre mí
+                                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                        </a>
+                                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                            <nav class="sb-sidenav-menu-nested nav">
+                                                <a class="nav-link" href="../public/redes_sociales.html">Redes</a>
+                                                <a class="nav-link" href="../public/curriculum.html">¿Quien soy?</a>
+                                            </nav>
+                                        </div>
+                                </div>
+                                <div class="sb-sidenav-footer">
+                                    <div class="small" id="welcomeMensaje">Bienvenido</div>
+                                </div>
+                            </nav>
+                        </div>
+                 <!-- FIN DEL NAV BAR -->
+                <!--CONTENIDO PRINCIPAL-->
+                <div id="layoutSidenav_content">
+                <main>
+                    <div class="container mt-5">
+                        <h2>Socios colaboladores:</h2>
+                      <br> <br> <br>
+                        <div class="row">
+                          <div class="col-4 text-center">
+                            <a href="https://www.ufv.es/">
+                              <img src="../assets/img/ufv.jpg" alt="Imagen 1" class="img-fluid rounded-circle" width="200" height="200">
+                            </a>
+                            <p>Universidad Francisco de Vitoria</p>
+                            <p>Esta entidad universitaria ha proporcionado los recursos educativos necesarios para que esta página web nazca.</p>
+                          </div>
+                      
+                          <div class="col-4 text-center">
+                            <a href="https://github.com/">
+                                <img src="../assets/img/github.svg" alt="Imagen 1" class="img-fluid rounded-circle" width="200" height="200">
+                            </a>
+                            <p>Git Hub</p>
+                            <p>Esta empresa de repositorios ha permitido que el desarrollo sea constante y accesible a todo el mundo.</p>
+                          </div>
+                      
+                          <div class="col-4 text-center">
+                            <a  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">
+                                <img src="../assets/img/Open.ico" alt="Imagen 1" class="img-fluid rounded-circle" width="200" height="200">
+                            </a>
+                            <p>Super Patrocinio</p>
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">¡El mayot patrozinador de todos!</a>
+                        </div>
+                        </div>
+                      
+                      </div>
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Alvorak</div>
+                            <div>
+                                <a href="#">Política de Privacidad</a>
+                                &middot;
+                                <a href="#">Términos &amp; Condiciones</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="../js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="../assets/demo/chart-area-demo.js"></script>
+        <script src="../assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="../js/datatables-simple-demo.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script> 
+        $(document).ready(function () { 
+             EstaLogueado();
+        });
+        function EstaLogueado(){
+            var botonLogin =  document.getElementById("botonLogin");
+            var iconoPersona = document.getElementById("iconoPersona");
+            var usuario = sessionStorage.getItem("Usuario");
+            if(usuario){
+                var mensajeBienvenida=  document.getElementById("welcomeMensaje");
+                mensajeBienvenida.textContent = "Bienvenido " + sessionStorage.getItem("Usuario"); 
+                botonLogin.textContent = "Cerrar Sesión";
+                botonLogin.href = "../public/login.html";
+                botonLogin.onclick  = CerrarSesion;
+                iconoPersona.src ="../assets/img/Open.ico";
+            }
+            else{
+                botonLogin.textContent = "Iniciar Sesión";
+                botonLogin.href = "../public/login.html";
+                iconoPersona.src ="../assets/img/Close.ico"; 
+            }
+        }
+        function CerrarSesion(){
+            for (var key in sessionStorage) {
+             if (sessionStorage.hasOwnProperty(key)) {
+                 sessionStorage.removeItem(key);
+                 }
+            }              
+        }
+		</script>
+    </body>
+</html>
