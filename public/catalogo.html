@@ -9,6 +9,7 @@
         <title>Alvorak's Web</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
         <link href="../css/styles.css" rel="stylesheet" />
+        <link href="../css/catalogo.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
     <body class="sb-nav-fixed">
@@ -53,11 +54,18 @@
                                             <div class="sb-nav-link-icon"><i class="fa-solid fa-users"></i></div>
                                             Socios
                                         </a>
-                                        <a class="nav-link" href="../index.html">
-                                            <div class="sb-nav-link-icon"><i class="fa-solid fa-book"></i></div>
-                                            Tema Abierto
+                                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                            <div class="sb-nav-link-icon"><i class="fa-solid fa-medal"></i></div>
+                                            Bordados
+                                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                         </a>
-                                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                            <nav class="sb-sidenav-menu-nested nav">
+                                                <a class="nav-link" href="../public/redes_sociales.html">¿Cómo que bordados?</a>
+                                                <a class="nav-link" href="../public/catalogo.html">Catálogo</a>
+                                            </nav>
+                                        </div>
+                                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                                             <div class="sb-nav-link-icon"><i class="fa-solid fa-medal"></i></div>
                                             Sobre mí
                                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
@@ -78,36 +86,47 @@
                 <!--CONTENIDO PRINCIPAL-->
                 <div id="layoutSidenav_content">
                 <main>
-                    <div class="container mt-5">
-                        <h2>Socios colaboladores:</h2>
-                      <br> <br> <br>
-                        <div class="row">
-                          <div class="col-4 text-center">
-                            <a href="https://www.ufv.es/">
-                              <img src="../assets/img/ufv.jpg" alt="Imagen 1" class="img-fluid rounded-circle" width="200" height="200">
-                            </a>
-                            <p>Universidad Francisco de Vitoria</p>
-                            <p>Esta entidad universitaria ha proporcionado los recursos educativos necesarios para que esta página web nazca.</p>
-                          </div>
-                      
-                          <div class="col-4 text-center">
-                            <a href="https://github.com/AlvaroIsProgramming">
-                                <img src="../assets/img/github.svg" alt="Imagen 1" class="img-fluid rounded-circle" width="200" height="200">
-                            </a>
-                            <p>Git Hub</p>
-                            <p>Aquí encontrareis mi perfil en GitHub con todos mis proyectos.</p>
-                          </div>
-                      
-                          <div class="col-4 text-center">
-                            <a  href="https://www.youtube.com/watch?v=BbeeuzU5Qc8&ab_channel=MetroGirlzStation">
-                                <img src="../assets/img/gpt.png" alt="Imagen 1" class="img-fluid rounded-circle" width="200" height="200">
-                            </a>
-                            <p>GPT 4.0</p>
-                            <a href="https://www.youtube.com/watch?v=BbeeuzU5Qc8&ab_channel=MetroGirlzStation" target="_blank">¡A traves de este enlace obtendras acceso gratuito a la nueva y ultima version de Chat GPT!</a>
+                    <h1>Catalogo de Bordados:<i><small>(todos hechos a mano)</small></i></h1>
+                    <section>
+                        <div class="producto">
+                            <img src="../assets/img/zenitsu.jpg" alt="Producto 1">
+                            <h2>Zenitsu</h2>
+                            <p>Bordado a color de Zenitsu (Demon Slayer).</p>
+                            <p>Precio: $19.99</p>
+                            <button>Añadir al carrito</button>
                         </div>
+                        <div class="producto">
+                            <img src="../assets/img/kayne.jpg" alt="Producto 2">
+                            <h2>Fall in Love With Kayne</h2>
+                            <p>Bordado al estilo cuaderno sobre el amor.</p>
+                            <p>Precio: $9.99</p>
+                            <button>Añadir al carrito</button>
                         </div>
-                      
-                      </div>
+                        <div class="producto">
+                            <img src="../assets/img/standarts.jpg" alt="Producto 2">
+                            <h2>Papyrus</h2>
+                            <p>Bordado en negro de Papyrus (Undertale).</p>
+                            <p>Precio: $9.99</p>
+                            <button>Añadir al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <img src="../assets/img/yourButt.jpg" alt="Producto 2">
+                            <h2>I love your Butt </h2>
+                            <p>Bordado sobre el amor.</p>
+                            <p>Precio: $14.99</p>
+                            <button>Añadir al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <img src="../assets/img/quiteTheCatch.jpg" alt="Producto 2">
+                            <h2>You are quite the catch!</h2>
+                            <p>Bordado sobre una snitch dorada de Harry Potter.</p>
+                            <p>Precio: $14.99</p>
+                            <button>Añadir al carrito</button>
+                        </div>
+                
+                        <!-- Agrega más productos según sea necesario -->
+                
+                    </section>                
                 </main>
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">

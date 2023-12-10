@@ -9,7 +9,35 @@
         <title>Alvorak's Web</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
         <link href="../css/styles.css" rel="stylesheet" />
+        <link href="../css/temaAbierto.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+    
+            header {
+                text-align: center;
+                padding: 10px;
+                background-color: #f2f2f2;
+            }
+    
+            section {
+                text-align: justify;
+                margin: 20px;
+            }
+    
+            .foto {
+                margin: 10px;
+            }
+    
+            footer {
+                text-align: center;
+                padding: 10px;
+                background-color: #f2f2f2;
+            }
+        </style>
     </head>
     <body class="sb-nav-fixed">
                     <!-- Navbar de arriba y abajo -->
@@ -53,11 +81,18 @@
                                             <div class="sb-nav-link-icon"><i class="fa-solid fa-users"></i></div>
                                             Socios
                                         </a>
-                                        <a class="nav-link" href="../index.html">
-                                            <div class="sb-nav-link-icon"><i class="fa-solid fa-book"></i></div>
-                                            Tema Abierto
+                                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                            <div class="sb-nav-link-icon"><i class="fa-solid fa-medal"></i></div>
+                                            Bordados
+                                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                         </a>
-                                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                            <nav class="sb-sidenav-menu-nested nav">
+                                                <a class="nav-link" href="../public/redes_sociales.html">¿Cómo que bordados?</a>
+                                                <a class="nav-link" href="../public/catalogo.html">Catálogo</a>
+                                            </nav>
+                                        </div>
+                                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                                             <div class="sb-nav-link-icon"><i class="fa-solid fa-medal"></i></div>
                                             Sobre mí
                                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
@@ -78,36 +113,23 @@
                 <!--CONTENIDO PRINCIPAL-->
                 <div id="layoutSidenav_content">
                 <main>
-                    <div class="container mt-5">
-                        <h2>Socios colaboladores:</h2>
-                      <br> <br> <br>
-                        <div class="row">
-                          <div class="col-4 text-center">
-                            <a href="https://www.ufv.es/">
-                              <img src="../assets/img/ufv.jpg" alt="Imagen 1" class="img-fluid rounded-circle" width="200" height="200">
-                            </a>
-                            <p>Universidad Francisco de Vitoria</p>
-                            <p>Esta entidad universitaria ha proporcionado los recursos educativos necesarios para que esta página web nazca.</p>
-                          </div>
-                      
-                          <div class="col-4 text-center">
-                            <a href="https://github.com/AlvaroIsProgramming">
-                                <img src="../assets/img/github.svg" alt="Imagen 1" class="img-fluid rounded-circle" width="200" height="200">
-                            </a>
-                            <p>Git Hub</p>
-                            <p>Aquí encontrareis mi perfil en GitHub con todos mis proyectos.</p>
-                          </div>
-                      
-                          <div class="col-4 text-center">
-                            <a  href="https://www.youtube.com/watch?v=BbeeuzU5Qc8&ab_channel=MetroGirlzStation">
-                                <img src="../assets/img/gpt.png" alt="Imagen 1" class="img-fluid rounded-circle" width="200" height="200">
-                            </a>
-                            <p>GPT 4.0</p>
-                            <a href="https://www.youtube.com/watch?v=BbeeuzU5Qc8&ab_channel=MetroGirlzStation" target="_blank">¡A traves de este enlace obtendras acceso gratuito a la nueva y ultima version de Chat GPT!</a>
+                    <section>
+                        <p><h3>¡Bienvenido a mi espacio dedicado al punto de cruz! </h3> El punto de cruz es una forma hermosa y relajante de expresar la creatividad a través de la aguja y el hilo. Para mí, es más que un simple pasatiempo; es una forma de arte que me permite crear piezas únicas y significativas.</p>
+                
+                        <p>El proceso de contar los puntos y crear patrones me brinda una sensación de calma y satisfacción. A continuación, comparto algunas imágenes de mis creaciones:</p>
+                
+                        <div class="foto">
+                            <img src="punto_de_cruz1.jpg" alt="Punto de Cruz 1" width="300">
+                            <p>Descripción de la primera imagen.</p>
                         </div>
+                
+                        <div class="foto">
+                            <img src="punto_de_cruz2.jpg" alt="Punto de Cruz 2" width="300">
+                            <p>Descripción de la segunda imagen.</p>
                         </div>
-                      
-                      </div>
+                
+                        <p>Espero que disfrutes explorando mi pasión por el punto de cruz tanto como yo disfruto creando estas piezas. Si tienes alguna pregunta o simplemente quieres compartir tus propias experiencias en el mundo del bordado, ¡no dudes en ponerte en contacto!</p>
+                    </section>
                 </main>
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
