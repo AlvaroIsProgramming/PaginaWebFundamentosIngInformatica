@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/*Loguin de  https://codepen.io/ayush602/pen/mdQJreW*/
 *
 {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  dding: 0;
+  bomargin: 0;
+  pax-sizing: border-box;
   font-family: 'Quicksand', sans-serif;
 }
 body 

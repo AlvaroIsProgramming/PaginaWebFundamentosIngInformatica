@@ -12,102 +12,119 @@
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
     <body class="sb-nav-fixed">
-                    <!-- Navbar de arriba y abajo -->
-                    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-                        <a class="navbar-brand ps-3" href="../index.html">Alvorak</a>
-                        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
-                        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-                            <div class="input-group">
-                                <input class="form-control" type="text" placeholder="Buscar..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-                                <button class="btn btn-primary" id="btnNavbarSearch" onclick="alertaca()" type="button"><i class="fas fa-search"></i></button>
+                   <!-- Navbar de arriba y abajo -->
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <a class="navbar-brand ps-3" href="../index.html">Alvorak</a>
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Buscar..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                    <button class="btn btn-primary" id="btnNavbarSearch" onclick="alertaca()" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img id="iconoPersona" src="assets/img/Close.ico"></img></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="" id="botonLogin"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Menu</div>
+                            <a class="nav-link" href="../index.html">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-house"></i></div>
+                                Inicio
+                            </a>
+                            <a class="nav-link" href="../public/fundamentos.html">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-gear"></i></div>
+                                Fundamentos
+                            </a>
+                            <a class="nav-link" href="../public/contacto.html">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-address-book"></i></div>
+                                Contáctame
+                            </a>
+                            <a class="nav-link" href="../public/red.html">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-users"></i></div>
+                                Socios
+                            </a>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-medal"></i></div>
+                                Sobre mí
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="../public/temaAbierto.html">Tema Abierto</a>
+                                    <a class="nav-link" href="../public/curriculum.html">¿Quien soy?</a>
+                                
+                                </nav>
                             </div>
-                        </form>
-                        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img id="iconoPersona" src="assets/img/Close.ico"></img></a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="" id="botonLogin"></a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div id="layoutSidenav">
-                        <div id="layoutSidenav_nav">
-                            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
-                                <div class="sb-sidenav-menu">
-                                    <div class="nav">
-                                        <div class="sb-sidenav-menu-heading">Menu</div>
-                                        <a class="nav-link" href="../index.html">
-                                            <div class="sb-nav-link-icon"><i class="fa-solid fa-house"></i></div>
-                                            Inicio
-                                        </a>
-                                        <a class="nav-link" href="../public/fundamentos.html">
-                                            <div class="sb-nav-link-icon"><i class="fa-solid fa-gear"></i></div>
-                                            Fundamentos
-                                        </a>
-                                        <a class="nav-link" href="../public/contacto.html">
-                                            <div class="sb-nav-link-icon"><i class="fa-solid fa-address-book"></i></div>
-                                            Contáctame
-                                        </a>
-                                        <a class="nav-link" href="../public/red.html">
-                                            <div class="sb-nav-link-icon"><i class="fa-solid fa-users"></i></div>
-                                            Socios
-                                        </a>
-                                        <a class="nav-link" href="../index.html">
-                                            <div class="sb-nav-link-icon"><i class="fa-solid fa-book"></i></div>
-                                            Tema Abierto
-                                        </a>
-                                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                                            <div class="sb-nav-link-icon"><i class="fa-solid fa-medal"></i></div>
-                                            Sobre mí
-                                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                        </a>
-                                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                                            <nav class="sb-sidenav-menu-nested nav">
-                                                <a class="nav-link" href="../public/redes_sociales.html">Redes</a>
-                                                <a class="nav-link" href="../public/curriculum.html">¿Quien soy?</a>
-                                            </nav>
-                                        </div>
-                                </div>
-                                <div class="sb-sidenav-footer">
-                                    <div class="small" id="welcomeMensaje">Bienvenido</div>
-                                </div>
-                            </nav>
-                        </div>
-                 <!-- FIN DEL NAV BAR -->
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small" id="welcomeMensaje">Bienvenido</div>
+                    </div>
+                </nav>
+            </div>
+         <!-- FIN DEL NAV BAR -->
                 <!--CONTENIDO PRINCIPAL-->
-                <div id="layoutSidenav_content">
+            <div id="layoutSidenav_content">
                 <main>
                     <div class="container mt-5">
-                        <h2>Socios colaboladores:</h2>
+                        <h2>Socios colaboladores: (para obtener mas información haz click en las imagenes)</h2>
                       <br> <br> <br>
                         <div class="row">
-                          <div class="col-4 text-center">
-                            <a href="https://www.ufv.es/">
-                              <img src="../assets/img/ufv.jpg" alt="Imagen 1" class="img-fluid rounded-circle" width="200" height="200">
-                            </a>
-                            <p>Universidad Francisco de Vitoria</p>
-                            <p>Esta entidad universitaria ha proporcionado los recursos educativos necesarios para que esta página web nazca.</p>
-                          </div>
-                      
-                          <div class="col-4 text-center">
-                            <a href="https://github.com/AlvaroIsProgramming">
-                                <img src="../assets/img/github.svg" alt="Imagen 1" class="img-fluid rounded-circle" width="200" height="200">
-                            </a>
-                            <p>Git Hub</p>
-                            <p>Aquí encontrareis mi perfil en GitHub con todos mis proyectos.</p>
-                          </div>
-                      
-                          <div class="col-4 text-center">
-                            <a  href="https://www.youtube.com/watch?v=BbeeuzU5Qc8&ab_channel=MetroGirlzStation">
-                                <img src="../assets/img/gpt.png" alt="Imagen 1" class="img-fluid rounded-circle" width="200" height="200">
-                            </a>
-                            <p>GPT 4.0</p>
-                            <a href="https://www.youtube.com/watch?v=BbeeuzU5Qc8&ab_channel=MetroGirlzStation" target="_blank">¡A traves de este enlace obtendras acceso gratuito a la nueva y ultima version de Chat GPT!</a>
+                            <div class="col-4 text-center">
+                                <a href="https://www.ufv.es/">
+                                <img src="../assets/img/ufv.jpg" alt="Imagen 1" class="img-fluid rounded-circle" width="200" height="200">
+                                </a>
+                                <p>Universidad Francisco de Vitoria</p>
+                                <p>Esta entidad universitaria ha proporcionado los recursos educativos necesarios para que esta página web nazca.</p>
+                            
+                                </div>
+                        
+                            <div class="col-4 text-center">
+                                <a href="https://github.com/AlvaroIsProgramming">
+                                    <img src="../assets/img/github.svg" alt="Imagen 1" class="img-fluid rounded-circle" width="200" height="200">
+                                </a>
+                                <p>Git Hub</p>
+                                <p>Aquí encontrareis mi perfil en GitHub con todos mis proyectos.</p>
+                            </div>
+                        
+                            <div class="col-4 text-center">
+                                <a  href="https://www.youtube.com/watch?v=BbeeuzU5Qc8&ab_channel=MetroGirlzStation">
+                                    <img src="../assets/img/gpt.png" alt="Imagen 1" class="img-fluid rounded-circle" width="200" height="200">
+                                </a>
+                                <p>GPT 4.0</p>
+                                <a href="https://www.youtube.com/watch?v=BbeeuzU5Qc8&ab_channel=MetroGirlzStation" target="_blank">¡A traves de este enlace obtendras acceso gratuito a la nueva y ultima version de Chat GPT!</a>
+                            </div>
                         </div>
-                        </div>
-                      
-                      </div>
+                        <div class="row">
+                            <div class="col-4 text-center">
+                                <a  href="https://070704.github.io/Pagina-web-Pedro-Rodr-guez/">
+                                    <img src="../assets/img/pedro.jpg" alt="Imagen 1" class="img-fluid rounded-circle" width="200" height="200">
+                                </a>
+                                <p>Pedro</p>
+                            </div>
+                            <div class="col-4 text-center">
+                                <a  href="">
+                                    <img src="../assets/img/Argenta.png" alt="Imagen 1" class="img-fluid rounded-circle" width="200" height="200">
+                                </a>
+                                <p>Argenta</p>
+                            </div>
+                            <div class="col-4 text-center">
+                                <a  href="">
+                                    <img src="../assets/img/Miguel.png" alt="Imagen 1" class="img-fluid rounded-circle" width="200" height="200">
+                                </a>
+                                <p>Miguel Ciordia</p>
+                            </div>
+                        </div>                   
+                     </div>
                 </main>
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
