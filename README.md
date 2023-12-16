@@ -1,8 +1,9 @@
 # Documento de Diseño Detallado
-## ALVARO GARCIA HERRERO
+## ALVARO GARCIA HERRERO 1º Grupo B 
 
 ## Descripción del proyecto:
-Durante este proyecto realizaremos una página web para la asignatura de FII. Dicha página será realizada utilizando todos mis conicimientos y recursos aprendidos y recogidos a lo largo de todos mis años dentro del mundo del desarrollo de páginas web.
+Durante este proyecto realizaremos una página web para la asignatura de FII. Dicha página será realizada utilizando todos mis conicimientos y recursos aprendidos y recogidos a lo largo de todos mis años dentro del mundo del desarrollo de páginas web. En este caso he elegido para el tema libre uno de mis hobbies. En cuanto al resto de aspectos de la página sigue la estructura solicitada.
+
 
 ## NOTA IMPORTANTE:
 Durante el desarrollo de este proyecto se han utilizado recursos externos tales como, bootstrap, foontawesome y librerias gratuitas y de codigo abierto de html y css con el fin
