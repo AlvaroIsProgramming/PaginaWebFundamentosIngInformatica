@@ -43,5 +43,12 @@ function alertaca() {
         text: '',
         imageUrl: gifs,
         imageHeight: 300
-    })
+        })
+    }
+    function mensajeOk() {
+        Swal.fire({
+            title: 'Su formulario se ha procesado correctamente',
+            text: '',
+            icon: "info"
+        })
     }
