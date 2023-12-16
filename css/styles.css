@@ -1,5 +1,66 @@
 @charset "UTF-8";
 /*CCS general del sitio web entera (CABECERA/NAVBAR/FOOTER...)*/
+.TemaAbierto {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.TemaAbierto header {
+  text-align: center;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+.TemaAbierto section {
+  text-align: justify;
+  margin: 20px;
+}
+
+.TemaAbierto .foto {
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+  margin: auto;
+}
+
+.TemaAbierto .foto > div {
+  margin-right: 20px;
+}
+
+.TemaAbierto .foto img {
+  max-width: 100%;
+  height: auto;
+}
+
+.Curriculum {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.Curriculum header {
+  text-align: center;
+}
+
+.Curriculum h1,
+.Curriculum h2 {
+  color: #333;
+}
+
+.Curriculum img {
+  max-width: 100%;
+  height: auto;
+}
+
+.Curriculum .container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.Curriculum .left-col,
+.Curriculum .right-col {
+  width: 48%;
+}
 ul.contenidos-lista {
   text-align: center;
   list-style-position: inside;
