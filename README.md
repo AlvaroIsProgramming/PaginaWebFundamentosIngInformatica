@@ -12,7 +12,7 @@ de desarrollar una página web dinamica, agradable a la vista y lo mas parecida 
 ## Dificultades encotradas:
 - Poder administrar mi tiempo de manera optima para desarrollar esta página web.
 - Rediseñar la página ya que en un principio iba a tener otro formato y contenidos (el login era una de las adiciones de esta idea inicial)
-- La utilización de JS para que tras el login el usuario pudiera visualizar un mensaje de bienvenida. Para esto utilicé unas funciones que te permiten guardar datos en la sesión (cache) de la página web. Posterior mente se pretendia mejorar el proceso para que solo los usuarios logueados pudiesen tener acceso a ciertos aspectos de la página. Sin embargo este desarrollo se paró una vez los requisitos para este proyecto fueron publicaos. Adicionalmente, en función del si el usuario esta logueado en la página o no el boton e icono de incio de sesión cambia.
+- La utilización de JS para que tras el login el usuario pudiera visualizar un mensaje de bienvenida. Para esto utilicé unas funciones que te permiten guardar datos en la sesión (cache) de la página web. Posteriormente se pretendia mejorar el proceso para que solo los usuarios logueados pudiesen tener acceso a ciertos aspectos de la página. Sin embargo este desarrollo se paró una vez los requisitos para este proyecto fueron publicaos. Adicionalmente, en función del si el usuario esta logueado en la página o no el boton e icono de incio de sesión cambia.
 - Implementar y adapatar todos mis recursos en un proyecto de forma que existan en un ecosistema unico.
 
 ## Conclusiones del proyecto:
